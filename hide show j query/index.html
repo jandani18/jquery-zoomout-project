@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+      .first{
+        display: none;
+      }
+      .second{
+        display: none;
+      }
+      .third{
+        display: none;
+      }
+      .main{
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+      }
+      .mainp{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 100px;
+      }
+      .mainp img{
+    border: solid 3px black;
+    box-shadow: #000000b2;
+    border-radius: 50px;
+    
+      }
+      .main img{
+    border: solid 5px black;
+    box-shadow: #000000b2;
+    border-radius: 50px;
+      }
+       
+       
+      </style>
+      </head>
+
+      <body>
+       <div class="main">
+        <img src="./images/p1.webp" height="400px" width="500px" class="first" alt="">
+        <img src="./images/p2.webp" height="400px" width="500px" class="second" alt="">
+        <img src="./images/p3.webp" height="400px" width="500px" class="third" alt="">
+
+       </div>
+       <div class="mainp">
+        <img src="./images/p1.webp" height="200px" width="300px" class="first-1" alt="">
+        <img src="./images/p2.webp" height="200px" width="300px"  class="second-2" alt="">
+        <img src="./images/p3.webp" height="200px" width="300px" class="third-3" alt="">
+
+       </div>
+        <script>
+           $(document).ready(function(){
+                $(".second-2").click(function(){
+                 $(".second").show();
+                $(".first").hide();
+                $(".third").hide();
+                
+                })
+
+                $(".third-3").click(function(){
+                $(".third").show();
+                $(".first").hide();
+                $(".second").hide();
+                
+                })
+                $(".first-1").click(function(){
+                $(".first").show();
+                $(".second").hide();
+                $(".third").hide();
+                
+                })
+                
+                
+                })
+                
+    
+           
+    
+    
+        
+        </script>
+    </body>
+    
+    </html>
+      

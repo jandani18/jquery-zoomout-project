@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <style>
+     p {
+        display: none;
+     }
+    
+   </style>
+</head>
+
+<body>
+    <h1>
+       <img src="./images/s1.jpg" alt="">
+    </h1>
+
+    <p>
+      <img src="./images/s4.webp" alt="">
+    </p>
+    <h2>
+      <img src="./images/s3.webp" alt="">
+    </h2>
+    <button class="hide">HIDE</button>
+    <button class="show">SHOW</button>
+    <button class="tog">TOGGLE</button>
+
+    <button class="slideup">SLIDE UP</button>
+    <button class="slidedown">SLIDE down</button>
+    <button class="slidetog">SLIDE TOGGLE</button>
+
+
+    <button class="color">CSS</button>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".hide").click(function(){
+                $("h1").hide();
+            });
+
+
+            $(".show").click(function(){
+                $("h1").show();
+            })
+
+            $(".tog").click(function(){
+                $("h1").toggle();
+            })
+
+            $(".slideup").click(function(){
+                $("h1").slideUp();
+            })
+
+            $(".slidedown").click(function(){
+                $("h1").slideDown();
+            })
+
+            $(".slidetog").click(function(){
+                $("h1").slideToggle("slow");
+            })
+
+
+            $(".color").click(function(){
+                $("h1").css({display : "none"})
+                $("p").css({display : "block"})
+                $("h2").css({display : "block"})
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>
